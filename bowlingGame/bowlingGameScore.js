@@ -9,6 +9,9 @@ const calculateTotalScore = (arr) => {
     for (let i = 0; i < arr.length; i++) {
         if (arr[i][0] === 10) {
             score += 10;
+            if (i == 10) {
+                score += arr[i][1] + arr[i][2];
+            }
             strike = true;
             if (spare == true) {
                 score += 10;
@@ -48,3 +51,5 @@ const bestScore = (game1, game2, game3) => {
 
 
 console.log(calculateTotalScore([[3, 6], [3, 6], [3, 6], [3, 6], [3, 6], [3, 6], [3, 6], [3, 6], [3, 6], [3, 6]]));
+
+module.export = { calculateTotalScore, bestScore };
