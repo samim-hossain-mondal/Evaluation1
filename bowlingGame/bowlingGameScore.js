@@ -38,4 +38,13 @@ const calculateTotalScore = (arr) => {
     return score;
 };
 
+// Feature 2 --> Find Best Score in set of Games
+const bestScore = (game1, game2, game3) => {
+    const game1Score = calculateTotalScore(game1);
+    const game2Score = calculateTotalScore(game2);
+    const game3Score = calculateTotalScore(game3);
+    return Math.max(game1Score, Math.max(game2Score, game3Score));
+};
+
+
 console.log(calculateTotalScore([[3, 6], [3, 6], [3, 6], [3, 6], [3, 6], [3, 6], [3, 6], [3, 6], [3, 6], [3, 6]]));
