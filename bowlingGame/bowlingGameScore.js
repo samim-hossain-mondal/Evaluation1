@@ -52,6 +52,19 @@ const bestScore = (gameArray) => {
     }
     return mx;
 };
-//console.log(calculateTotalScore([[3, 6], [3, 6], [3, 6], [3, 6], [3, 6], [3, 6], [3, 6], [3, 6], [3, 6], [3, 6]]));
+console.log(calculateTotalScore([[3, 6], [3, 6], [3, 6], [3, 6], [3, 6], [3, 6], [3, 6], [3, 6], [3, 6], [3, 6]]));
+console.log(calculateTotalScore([[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [10, 10, 10]]));
+console.log(calculateTotalScore([[6, 4], [3, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]));
+
+let game1 = [[3, 6], [3, 6], [3, 6], [3, 6], [3, 6], [3, 6], [3, 6], [3, 6], [3, 6], [3, 6]];
+let game2 = [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [10, 10, 10]];
+let game3 = [[6, 4], [3, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]];
+
+let gameArray = [];
+gameArray.push(game1);
+gameArray.push(game2);
+gameArray.push(game3);
+
+console.log(bestScore(gameArray));
 
 module.export = { calculateTotalScore, bestScore };
