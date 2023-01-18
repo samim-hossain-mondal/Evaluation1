@@ -52,8 +52,6 @@ const bestScore = (gameArray) => {
     }
     return mx;
 };
-
-
-console.log(calculateTotalScore([[3, 6], [3, 6], [3, 6], [3, 6], [3, 6], [3, 6], [3, 6], [3, 6], [3, 6], [3, 6]]));
+//console.log(calculateTotalScore([[3, 6], [3, 6], [3, 6], [3, 6], [3, 6], [3, 6], [3, 6], [3, 6], [3, 6], [3, 6]]));
 
 module.export = { calculateTotalScore, bestScore };
