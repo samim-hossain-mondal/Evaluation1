@@ -7,6 +7,9 @@ const calculateTotalScore = (arr) => {
     let strike = false;
     let spare = false;
     for (let i = 0; i < arr.length; i++) {
+        if (i != 10 && arr[i].length > 2) {
+            throw new Error("Invalid Input");
+        }
         if (arr[i][0] === 10) {
             score += 10;
             if (i == 10) {
